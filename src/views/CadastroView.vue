@@ -12,19 +12,22 @@
       <div class="form-group">
         <input type="password" v-model="user.password" placeholder="Senha">
       </div>
-      <div class="form-group">
-        <input type="text" v-model="cpfCnpj" placeholder="Cpf/Cnpj">
-      </div>
-      
-      <!-- Razão Social e Nome Fantasia aparece apenas se o Cpf/Cnpj tiver mais de 11 caracteres -->
-      <div v-if="cpfCnpj.length > 11" class="form-group">
-        <div class="form-group">
-          <input type="text" placeholder="Razão Social">
-        </div>
-      </div>
 
-      <div v-if="cpfCnpj.length > 11" class="form-group">
-        <input type="text" placeholder="Nome fantasia">
+      <div class="form-group">
+        <div class="form-group">
+          <input type="text" v-model="cpfCnpj" placeholder="Cpf/Cnpj">
+        </div>
+        
+        <!-- Razão Social e Nome Fantasia aparecem apenas se o Cpf/Cnpj tiver mais de 11 caracteres -->
+        <div v-if="cpfCnpj.length > 11">
+          <div class="form-group">
+            <input type="text" placeholder="Razão Social">
+          </div>
+
+          <div class="form-group">
+            <input type="text" placeholder="Nome fantasia">
+          </div>
+        </div>
       </div>
       
       <button type="submit">Cadastrar</button>
