@@ -44,7 +44,7 @@ nav {
   background-size: contain; /* Ajusta o tamanho da imagem central */
   background-repeat: no-repeat;
   width: 300px; /* Ajuste a largura conforme necessário */
-  height: 300px; /* Ajuste a altura conforme necessário */
+  height: 400px; /* Ajuste a altura conforme necessário */
   display: flex;
   align-items: center;
   justify-content: center; 
